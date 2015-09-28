@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>do-while</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center><h1>21 Pagina<br><br>Do - While</h1><br></center>
+        <style>
+            body{
+                margin: 0 20%;
+            }
+        </style>
+        <p id="num1"></p>
+        <script>
+            do{
+                var valor= prompt('ingrese un numero entre el 0 y 999','');
+                valor=parseInt(valor);
+                if(valor<=9&&valor>0){
+                    var parrafo=document.createElement("P");
+                    var text=document.createTextNode("El #"+valor +" tiene 1 digito"+"\n");
+                    parrafo.appendChild(text);
+                    document.body.appendChild(parrafo);
+                }
+                else{
+                    if(valor<=99&&valor>=10){
+                        var parrafo=document.createElement("P");
+                        var text=document.createTextNode("El #"+valor +" tiene 2 digitos"+"\n");
+                        parrafo.appendChild(text);
+                        document.body.appendChild(parrafo);
+                    }
+                    else{
+                        if(valor<=999&&valor>=100){
+                            var parrafo=document.createElement("P");
+                            var text=document.createTextNode("El #"+valor +" tiene 3 digitos"+"\n");
+                            parrafo.appendChild(text);
+                            document.body.appendChild(parrafo);
+                        }
+                    }
+                }
+            }while(valor!=0&&(valor<=999&&valor>0));
+        </script>
+   </body>
+</html>

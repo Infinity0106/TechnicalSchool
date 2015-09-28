@@ -1,0 +1,43 @@
+USE [Escuela]
+GO
+/****** Object:  StoredProcedure [dbo].[Alumno_Update]    Script Date: 05/09/2015 03:36:53 p.m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[Alumno_Update]
+@Matricula int,
+@Nombre varchar(50),
+@CURP varchar(18),
+@FechaNac date,
+@Direccion varchar(100),
+@Telefono varchar(20),
+@GeneroId varchar(1),
+@Email varchar(50),
+@Estatus bit
+as --que queremos que se ejecute
+begin--empieze
+UPDATE [dbo].[Alumno]
+   SET [Nombre] = @Nombre
+      ,[CURP] = @CURP
+      ,[FechaNac] = @FechaNac
+      ,[Direccion] = @Direccion
+      ,[Telefono] = @Telefono
+      ,[GeneroId] = @GeneroId
+      ,[Email] = @Email
+      ,[Estatus] = @Estatus
+ WHERE Matriucula=@Matricula
+ 
+ SELECT [AlumniId] as ID
+      ,[Matriucula] as Matricula
+      ,[Nombre] as Nombre
+      ,[CURP] as CURP
+      ,[FechaNac] as [Fecha de nacimiento]
+      ,[Direccion] as Direccion
+      ,[Telefono] as Telefono
+      ,[GeneroId] as Genero
+      ,[Email] as [E-mail]
+      ,[Estatus] as Estatus
+  FROM [dbo].[Alumno]
+  where Matriucula=@Matricula		
+end

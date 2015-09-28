@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Escuela.Presentacion.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 100px;
+        }
+        body{
+            background-color: #2c3e50;
+            background-image: url(https://c1.staticflickr.com/3/2728/4092458536_22990fe823_b.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 10%;
+        }
+        #Label1{
+            color: white;
+            text-shadow: 3px 3px 5px #000000;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="width: auto; background-color: rgba(44, 62, 80, .5);margin: 0 auto;">
+            <tr>
+                <td colspan="2">
+                    <asp:Label ID="Label1" runat="server" Text="PAGINA MAESTRA DE SISTEMA" Font-Size="42px"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Menu ID="Menu1" runat="server" ForeColor="White">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Presentacion/PaginaHija01.aspx" Text="Alumno" Value="Alumno"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentacion/PaginaHija02.aspx" Text="Maestro" Value="Maestro"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Presentacion/PaginaHija03.aspx" Text="Empleado" Value="Empleado"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

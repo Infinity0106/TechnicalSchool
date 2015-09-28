@@ -1,0 +1,6 @@
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 8\bin\Debug\ejercicio 8.exe.config
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 8\bin\Debug\ejercicio 8.exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 8\bin\Debug\ejercicio 8.pdb
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 8\obj\Debug\ejercicio 8.exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 8\obj\Debug\ejercicio 8.pdb
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 8\obj\Debug\ejercicio 8.csprojResolveAssemblyReference.cache

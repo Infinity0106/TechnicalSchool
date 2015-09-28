@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ejercicios</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function eje1(){
+                var n1=prompt("Dame el numero 1",'');
+                var n2=prompt("Dame el numero 2",'');
+                var n3=prompt("Dame el numero 3",'');
+                var n4=prompt("Dame el numero 4",'');
+                var sum=parseInt(n1)+parseInt(n2);
+                var mul=parseInt(n3)*parseInt(n4);
+                document.getElementById("1").innerHTML=n1+' + '+n2+' = '+sum+'<br>'+n3+' * '+n4+' = '+mul;
+                //document.write(n1+' + '+n2+' = '+sum+'<br>');
+                //document.write(n3+' * '+n4+' = '+mul);
+            }
+            function eje2(){
+                var n1=prompt("Dame el numero 1",'');
+                var n2=prompt("Dame el numero 2",'');
+                var n3=prompt("Dame el numero 3",'');
+                var n4=prompt("Dame el numero 4",'');
+                var sum=parseInt(n1)+parseInt(n2)+parseInt(n3)+parseInt(n4);
+                var mul=parseInt(n1)*parseInt(n2)*parseInt(n3)*parseInt(n4);
+                document.getElementById("2").innerHTML = n1+' + '+n2+' + '+n3+' + '+n4+' = '+sum+'<br>'+n1+' * '+n2+' * '+n3+' * '+n4+' = '+mul;
+                //document.write(n1+' + '+n2+' + '+n3+' + '+n4+' = '+sum+'<br>');
+                //document.write(n1+' * '+n2+' * '+n3+' * '+n4+' = '+mul);
+            }
+            function eje3(){
+                var precio=prompt("Cuanto cuesta?",'');
+                var dinero=prompt('Cuanto traes?','');
+                var cambio=parseInt(dinero)-parseInt(precio);
+                if(dinero>precio){
+                    document.getElementById('3').innerHTML='<table border=0>\n\
+                                                            <tr>\n\
+                                                            <td>Total</td>\n\
+                                                            <td>$ '+precio+'</td>\n\
+                                                            </tr>\n\
+                                                            <tr>\n\
+                                                            <td>Pago</td>\n\
+                                                            <td>$ '+dinero+'</td>\n\
+                                                            </tr>\n\
+                                                            <tr>\n\
+                                                            <td>Cambio</td>\n\
+                                                            <td style="color:green;">$ '+cambio+'</td></tr>\n\
+                                                            </table>';
+                    //"Total\t $"+precio+"<br>Pago\t $"+dinero+'<br>Cambio\t $'+cambio;
+                    //document.write("Total\t $"+precio+"<br>Pago\t $"+dinero+'<br>Cambio\t $'+cambio);
+                }
+                else{
+                    if(precio==dinero){
+                        document.getElementById('3').innerHTML='<table border=0>\n\
+                                                                <tr>\n\
+                                                                <td>Total</td>\n\
+                                                                <td>$ '+precio+'</td>\n\
+                                                                </tr>\n\
+                                                                <tr>\n\
+                                                                <td>Pago</td>\n\
+                                                                <td>$ '+dinero+'</td>\n\
+                                                                </tr>\n\
+                                                                <tr>\n\
+                                                                <td>Cambio</td>\n\
+                                                                <td>$ 0</td></tr>\n\
+                                                                </table>';
+                        //"Total\t $"+precio+"<br>Pago\t $"+dinero+'Cambio\t $0';
+                        //document.write("Total\t $"+precio+"<br>Pago\t $"+dinero+'Cambio\t $0');
+                    }
+                    else{
+                        document.getElementById('3').innerHTML= '<table border=0>\n\
+                                                                <tr>\n\
+                                                                <td>Total</td>\n\
+                                                                <td>$ '+precio+'</td>\n\
+                                                                </tr>\n\
+                                                                <tr>\n\
+                                                                <td>Pago</td>\n\
+                                                                <td>$ '+dinero+'</td>\n\
+                                                                </tr>\n\
+                                                                <tr>\n\
+                                                                <td>Cambio</td>\n\
+                                                                <td style="color:red;">$ '+cambio+'</td></tr>\n\
+                                                                </table>';
+                        //"Total\t $"+precio+"<br>Pago\t $"+dinero+'<br>Cambio\t $'+cambio;
+                        //document.write("Total\t $"+precio+"<br>Pago\t $"+dinero+'<br>Cambio\t $'+cambio);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <style>
+            body{
+                padding: 0 20%;
+            }
+        </style>
+        <h1><center>Problemas y ejercicios<center></h1>
+        <hr>
+        <p>Escribir un programa en el cual se ingresen cuatro numero, calcular e
+        infromar la suma de los dos primero y el producto del tercero y el cuarto</p>
+        <center>
+        <input type="button" value="+ & *" name="boton" onClick="eje1()">
+        </center>
+        <p id="1"></p>
+        <hr>
+        <p>Realizar un programa que lea los cuatro valores numericos e informar su suma y producto</p>
+        <center>
+        <input type="button" value="+ & * 2" name="boton" onClick="eje2()">
+        </center>
+        <p id="2"></p>
+        <hr>
+        <p>Desarrollar un programa qu epida el precio de un articula y la cantidad de dinero que lleva el cliente<br>
+        Mostrar:<br>
+        a) Si el cliente lleva dinero de mas, mostrar un mensaje que pueda comprar el articulo y decirle cual es su cambio<br>
+        b) Si el cliente lleva dinero extra, mostrar un mensaje que diga que puede comprar el articulo, sin cambio<br>
+        c) Mostrar que no puede comprar el articulo y mostrar la cantidad que le falta<br></p>
+        <center>
+        <input type="button" value="Compra de articulo" name="boton" onClick="eje3()">
+        </center>
+        <p id="3"></p>
+        <hr>
+    </body>
+</html>

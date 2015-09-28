@@ -1,0 +1,40 @@
+USE [Escuela]
+GO
+/****** Object:  StoredProcedure [dbo].[Alumno_Inset]    Script Date: 05/09/2015 03:36:57 p.m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[Alumno_Inset]
+@Matricula int,
+@Nombre varchar(50),
+@CURP varchar(18),
+@FechaNac date,
+@Direccion varchar(100),
+@Telefono varchar(20),
+@GeneroId varchar(1),
+@Email varchar(50),
+@Estatus bit
+as --que queremos que se ejecute
+begin--empieze
+INSERT INTO [dbo].[Alumno]
+           ([Matriucula]
+           ,[Nombre]
+           ,[CURP]
+           ,[FechaNac]
+           ,[Direccion]
+           ,[Telefono]
+           ,[GeneroId]
+           ,[Email]
+           ,[Estatus])
+     VALUES
+           (@Matricula,
+			@Nombre,
+			@CURP,
+			@FechaNac,
+			@Direccion,
+			@Telefono,
+			@GeneroId,
+			@Email,
+			@Estatus)
+end

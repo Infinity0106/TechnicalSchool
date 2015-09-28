@@ -1,0 +1,18 @@
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\bin\Debug\proyecto final (calYcalc).exe.config
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\proyecto final (calYcalc).csprojResolveAssemblyReference.cache
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\proyecto_final__calYcalc_.Properties.Resources.resources
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\proyecto final (calYcalc).csproj.GenerateResource.Cache
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\proyecto_final__calYcalc_.Menu.resources
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\bin\Debug\proyecto final (calYcalc).exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\bin\Debug\proyecto final (calYcalc).pdb
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\proyecto final (calYcalc).exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\proyecto final (calYcalc).pdb
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\proyecto_final__calYcalc_.FrmCalcu.resources
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\proyecto_final__calYcalc_.FrmCal.resources
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\bin\Debug\es\proyecto final (calYcalc).resources.dll
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\proyecto_final__calYcalc_.FrmCalcu.es.resources
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\es\proyecto final (calYcalc).resources.dll
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\bin\Debug\AxInterop.Microsoft.Office.Interop.Outlook.dll
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\AxInterop.Microsoft.Office.Interop.Outlook.dll
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\proyecto final (calYcalc).csproj.ResolveComReference.cache
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\proyecto final (calYcalc)\proyecto final (calYcalc)\obj\Debug\proyecto_final__calYcalc_.FrmAgen.resources

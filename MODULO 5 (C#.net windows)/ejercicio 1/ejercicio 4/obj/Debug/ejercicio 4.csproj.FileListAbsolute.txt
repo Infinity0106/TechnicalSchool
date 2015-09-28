@@ -1,0 +1,5 @@
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 4\bin\Debug\ejercicio 4.exe.config
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 4\bin\Debug\ejercicio 4.exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 4\bin\Debug\ejercicio 4.pdb
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 4\obj\Debug\ejercicio 4.exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 4\obj\Debug\ejercicio 4.pdb

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Validar</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center><h1>23 Pagina<br><br>Validar</h1><br></center>
+        <form name="miformulario" method="post" action="mailto:berny.orozco@hotmail.com" enctype="text/plain" onsubmit="return validacion(this.email.value)">
+            mandame tu e-mail: <input name="email" type="text">
+            <input type="submit" value="Enviar">
+        </form>
+        <style>
+            body{
+                margin: 0 20%;
+            }
+        </style>
+        <script>
+            function validacion(direccion){
+                if(direccion.indexOf("@")!=-1){
+                    return true;
+                }
+                else{
+                    alert('Debe escribir una direccion valida');
+                    return false;
+                }
+            }
+        </script>
+   </body>
+</html>

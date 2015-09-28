@@ -1,0 +1,413 @@
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1
+Server version: 5.5.21 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2011, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database zoologico;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> use zoologico;
+Database changed
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| playstore          |
+| test               |
+| zoologico          |
++--------------------+
+6 rows in set (0.23 sec)
+
+mysql> create table mascotas(
+    -> nombre varchar(20), propietario varchar(20), especie varchar(20), sexo varchar(1), nacimiento
+ date, fallecimiento date);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> describe mascotas;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| nombre        | varchar(20) | YES  |     | NULL    |       |
+| propietario   | varchar(20) | YES  |     | NULL    |       |
+| especie       | varchar(20) | YES  |     | NULL    |       |
+| sexo          | varchar(1)  | YES  |     | NULL    |       |
+| nacimiento    | date        | YES  |     | NULL    |       |
+| fallecimiento | date        | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+6 rows in set (0.09 sec)
+
+mysql> alter table mascotas add id int;
+Query OK, 0 rows affected (0.11 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe mascotas;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| nombre        | varchar(20) | YES  |     | NULL    |       |
+| propietario   | varchar(20) | YES  |     | NULL    |       |
+| especie       | varchar(20) | YES  |     | NULL    |       |
+| sexo          | varchar(1)  | YES  |     | NULL    |       |
+| nacimiento    | date        | YES  |     | NULL    |       |
+| fallecimiento | date        | YES  |     | NULL    |       |
+| id            | int(11)     | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+7 rows in set (0.01 sec)
+
+mysql> insert into mascotas (id,nombre,propietario,especie,sexo,nacimiento,fallecimiento) values
+    -> (1,'Pelusa','Diana','Hamster','F','2000-03-30',null),
+    -> (2,'Fluffy','Arnoldo','Gato','F','1999-02-04','2001-11-25'),
+    -> (3,'Mau',
+    -> \c
+mysql> insert into mascotas (id,nombre,propietario,especie,sexo,nacimiento,fallecimiento) values
+    -> (1,'Pelusa','Diana','Hamster','F','2000-03-30',null),
+    -> (2,'Fluffy','Arnoldo','Gato','F','1999-02-04','2001-11-25'),
+    -> (3,'Mau','Juan','Gato','M','1998-03-17',null),
+    -> (4,'Buffy','Arnoldo','Perro','F','1999-05-13',null),
+    -> (5,'FanFan','Benito','M','2000-08-27,null),
+    '> (6,'Kaiser','Diana','\c
+mysql> insert into mascotas (id,nombre,propietario,especie,sexo,nacimiento,fallecimiento) values
+    -> (1,'Pelusa','Diana','Hamster','F','2000-03-30',null),
+    -> (2,'Fluffy','Arnoldo','Gato','F','1999-02-04','2001-11-25'),
+    -> (3,'Mau','Juan','Gato','M','1998-03-17',null),
+    -> (4,'Buffy','Arnoldo','Perro','F','1999-05-13',null),
+    -> (5,'FanFan','Benito','Perro','M','2000-08-27,null);
+    '>
+    '> ;
+    '> ;
+    '> ;
+    '> ';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your
+MySQL server version for the right syntax to use near '' at line 6
+mysql> insert into mascotas (id,nombre,propietario,especie,sexo,nacimiento,fallecimiento) values
+    -> (1,'Pelusa','Diana','Hamster','F','2000-03-30',null),
+    -> (2,'Fluffy','Arnoldo','Gato','F','1999-02-04','2001-11-25'),
+    -> (3,'Mau','Juan','Gato','M','1998-03-17',null),
+    -> (4,'Buffy','Arnoldo','Perro','F','1999-05-13',null),
+    -> (5,'FanFan','Benito','Perro','M','2000-08-27',null);
+Query OK, 5 rows affected (0.06 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+mysql> insert into mascotas (id,nombre,propietario,especie,sexo,nacimiento,fallecimiento) values
+    -> (6,'Kaiser','Diana','Perro','M','1997-08-31','1998-07-29'),
+    -> (7,'Chispa','Omar','Ave','F','1998-09-11',null),
+    -> (8,'Wicho','Tomas','Ave',null,'2000-02-09',null),
+    -> (9,'Skin','Benito','Serpiente','M','2001-04-29',null);
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> select *from mascotas;
++--------+-------------+-----------+------+------------+---------------+------+
+| nombre | propietario | especie   | sexo | nacimiento | fallecimiento | id   |
++--------+-------------+-----------+------+------------+---------------+------+
+| Pelusa | Diana       | Hamster   | F    | 2000-03-30 | NULL          |    1 |
+| Fluffy | Arnoldo     | Gato      | F    | 1999-02-04 | 2001-11-25    |    2 |
+| Mau    | Juan        | Gato      | M    | 1998-03-17 | NULL          |    3 |
+| Buffy  | Arnoldo     | Perro     | F    | 1999-05-13 | NULL          |    4 |
+| FanFan | Benito      | Perro     | M    | 2000-08-27 | NULL          |    5 |
+| Kaiser | Diana       | Perro     | M    | 1997-08-31 | 1998-07-29    |    6 |
+| Chispa | Omar        | Ave       | F    | 1998-09-11 | NULL          |    7 |
+| Wicho  | Tomas       | Ave       | NULL | 2000-02-09 | NULL          |    8 |
+| Skin   | Benito      | Serpiente | M    | 2001-04-29 | NULL          |    9 |
++--------+-------------+-----------+------+------------+---------------+------+
+9 rows in set (0.00 sec)
+
+mysql> update mascotas set nacimiento='1989-08-31' where nombre='Kaiser';
+Query OK, 1 row affected (0.11 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select*from mascotas;
++--------+-------------+-----------+------+------------+---------------+------+
+| nombre | propietario | especie   | sexo | nacimiento | fallecimiento | id   |
++--------+-------------+-----------+------+------------+---------------+------+
+| Pelusa | Diana       | Hamster   | F    | 2000-03-30 | NULL          |    1 |
+| Fluffy | Arnoldo     | Gato      | F    | 1999-02-04 | 2001-11-25    |    2 |
+| Mau    | Juan        | Gato      | M    | 1998-03-17 | NULL          |    3 |
+| Buffy  | Arnoldo     | Perro     | F    | 1999-05-13 | NULL          |    4 |
+| FanFan | Benito      | Perro     | M    | 2000-08-27 | NULL          |    5 |
+| Kaiser | Diana       | Perro     | M    | 1989-08-31 | 1998-07-29    |    6 |
+| Chispa | Omar        | Ave       | F    | 1998-09-11 | NULL          |    7 |
+| Wicho  | Tomas       | Ave       | NULL | 2000-02-09 | NULL          |    8 |
+| Skin   | Benito      | Serpiente | M    | 2001-04-29 | NULL          |    9 |
++--------+-------------+-----------+------+------------+---------------+------+
+9 rows in set (0.00 sec)
+
+mysql> select * from mascotas where nombre='Kaiser';
++--------+-------------+---------+------+------------+---------------+------+
+| nombre | propietario | especie | sexo | nacimiento | fallecimiento | id   |
++--------+-------------+---------+------+------------+---------------+------+
+| Kaiser | Diana       | Perro   | M    | 1989-08-31 | 1998-07-29    |    6 |
++--------+-------------+---------+------+------------+---------------+------+
+1 row in set (0.00 sec)
+
+mysql> select * from mascotas where propietario='Benito';
++--------+-------------+-----------+------+------------+---------------+------+
+| nombre | propietario | especie   | sexo | nacimiento | fallecimiento | id   |
++--------+-------------+-----------+------+------------+---------------+------+
+| FanFan | Benito      | Perro     | M    | 2000-08-27 | NULL          |    5 |
+| Skin   | Benito      | Serpiente | M    | 2001-04-29 | NULL          |    9 |
++--------+-------------+-----------+------+------------+---------------+------+
+2 rows in set (0.00 sec)
+
+mysql> select * from mascotas where especie='Serpiente';
++--------+-------------+-----------+------+------------+---------------+------+
+| nombre | propietario | especie   | sexo | nacimiento | fallecimiento | id   |
++--------+-------------+-----------+------+------------+---------------+------+
+| Skin   | Benito      | Serpiente | M    | 2001-04-29 | NULL          |    9 |
++--------+-------------+-----------+------+------------+---------------+------+
+1 row in set (0.00 sec)
+
+mysql> select * from mascotas where nacimiento>='2000-01-01';
++--------+-------------+-----------+------+------------+---------------+------+
+| nombre | propietario | especie   | sexo | nacimiento | fallecimiento | id   |
++--------+-------------+-----------+------+------------+---------------+------+
+| Pelusa | Diana       | Hamster   | F    | 2000-03-30 | NULL          |    1 |
+| FanFan | Benito      | Perro     | M    | 2000-08-27 | NULL          |    5 |
+| Wicho  | Tomas       | Ave       | NULL | 2000-02-09 | NULL          |    8 |
+| Skin   | Benito      | Serpiente | M    | 2001-04-29 | NULL          |    9 |
++--------+-------------+-----------+------+------------+---------------+------+
+4 rows in set (0.00 sec)
+
+mysql> select * from mascotas where especie='perro' and sexo='f';
++--------+-------------+---------+------+------------+---------------+------+
+| nombre | propietario | especie | sexo | nacimiento | fallecimiento | id   |
++--------+-------------+---------+------+------------+---------------+------+
+| Buffy  | Arnoldo     | Perro   | F    | 1999-05-13 | NULL          |    4 |
++--------+-------------+---------+------+------------+---------------+------+
+1 row in set (0.00 sec)
+
+mysql> select * from mascotas where especie='ave' or especie='gato';
++--------+-------------+---------+------+------------+---------------+------+
+| nombre | propietario | especie | sexo | nacimiento | fallecimiento | id   |
++--------+-------------+---------+------+------------+---------------+------+
+| Fluffy | Arnoldo     | Gato    | F    | 1999-02-04 | 2001-11-25    |    2 |
+| Mau    | Juan        | Gato    | M    | 1998-03-17 | NULL          |    3 |
+| Chispa | Omar        | Ave     | F    | 1998-09-11 | NULL          |    7 |
+| Wicho  | Tomas       | Ave     | NULL | 2000-02-09 | NULL          |    8 |
++--------+-------------+---------+------+------------+---------------+------+
+4 rows in set (0.08 sec)
+
+mysql> selest*from mascotas where(especie='gato' and sexo='m')or(especie='perro' and sexo='f');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your
+MySQL server version for the right syntax to use near 'selest*from mascotas where(especie='gato' and
+ sexo='m')or(especie='perro' and se' at line 1
+mysql> select * from mascotas where (especies='gato' and sexo='m') or (especie='perro' and sexo='f')
+;
+ERROR 1054 (42S22): Unknown column 'especies' in 'where clause'
+mysql> select * from mascotas where (especie='gato' and sexo='m') or (especie='perro' and sexo='f');
+
++--------+-------------+---------+------+------------+---------------+------+
+| nombre | propietario | especie | sexo | nacimiento | fallecimiento | id   |
++--------+-------------+---------+------+------------+---------------+------+
+| Mau    | Juan        | Gato    | M    | 1998-03-17 | NULL          |    3 |
+| Buffy  | Arnoldo     | Perro   | F    | 1999-05-13 | NULL          |    4 |
++--------+-------------+---------+------+------------+---------------+------+
+2 rows in set (0.00 sec)
+
+mysql> select nombre, nacimiento from mascotas;
++--------+------------+
+| nombre | nacimiento |
++--------+------------+
+| Pelusa | 2000-03-30 |
+| Fluffy | 1999-02-04 |
+| Mau    | 1998-03-17 |
+| Buffy  | 1999-05-13 |
+| FanFan | 2000-08-27 |
+| Kaiser | 1989-08-31 |
+| Chispa | 1998-09-11 |
+| Wicho  | 2000-02-09 |
+| Skin   | 2001-04-29 |
++--------+------------+
+9 rows in set (0.00 sec)
+
+mysql> select propietario from mascotas;
++-------------+
+| propietario |
++-------------+
+| Diana       |
+| Arnoldo     |
+| Juan        |
+| Arnoldo     |
+| Benito      |
+| Diana       |
+| Omar        |
+| Tomas       |
+| Benito      |
++-------------+
+9 rows in set (0.00 sec)
+
+mysql> select distinct propietario from mascotas;
++-------------+
+| propietario |
++-------------+
+| Diana       |
+| Arnoldo     |
+| Juan        |
+| Benito      |
+| Omar        |
+| Tomas       |
++-------------+
+6 rows in set (0.00 sec)
+
+mysql> select nombre, especie, nacimiento from mascotas where especie='perro' or especie='gato';
++--------+---------+------------+
+| nombre | especie | nacimiento |
++--------+---------+------------+
+| Fluffy | Gato    | 1999-02-04 |
+| Mau    | Gato    | 1998-03-17 |
+| Buffy  | Perro   | 1999-05-13 |
+| FanFan | Perro   | 2000-08-27 |
+| Kaiser | Perro   | 1989-08-31 |
++--------+---------+------------+
+5 rows in set (0.00 sec)
+
+mysql> select nombre, especie, nacimiento from mascotas where especie='perro' or especie='gato';
++--------+---------+------------+
+| nombre | especie | nacimiento |
++--------+---------+------------+
+| Fluffy | Gato    | 1999-02-04 |
+| Mau    | Gato    | 1998-03-17 |
+| Buffy  | Perro   | 1999-05-13 |
+| FanFan | Perro   | 2000-08-27 |
+| Kaiser | Perro   | 1989-08-31 |
++--------+---------+------------+
+5 rows in set (0.00 sec)
+
+mysql> alter table mascotas modify sexo char(1);
+Query OK, 9 rows affected (0.03 sec)
+Records: 9  Duplicates: 0  Warnings: 0
+
+mysql> describe mascotas;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| nombre        | varchar(20) | YES  |     | NULL    |       |
+| propietario   | varchar(20) | YES  |     | NULL    |       |
+| especie       | varchar(20) | YES  |     | NULL    |       |
+| sexo          | char(1)     | YES  |     | NULL    |       |
+| nacimiento    | date        | YES  |     | NULL    |       |
+| fallecimiento | date        | YES  |     | NULL    |       |
+| id            | int(11)     | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> select nombre,nacimiento from mascotas order by nacimiento;
++--------+------------+
+| nombre | nacimiento |
++--------+------------+
+| Kaiser | 1989-08-31 |
+| Mau    | 1998-03-17 |
+| Chispa | 1998-09-11 |
+| Fluffy | 1999-02-04 |
+| Buffy  | 1999-05-13 |
+| Wicho  | 2000-02-09 |
+| Pelusa | 2000-03-30 |
+| FanFan | 2000-08-27 |
+| Skin   | 2001-04-29 |
++--------+------------+
+9 rows in set (0.08 sec)
+
+mysql> select nombre,nacimiento from mascotas order by nacimiento desc;
++--------+------------+
+| nombre | nacimiento |
++--------+------------+
+| Skin   | 2001-04-29 |
+| FanFan | 2000-08-27 |
+| Pelusa | 2000-03-30 |
+| Wicho  | 2000-02-09 |
+| Buffy  | 1999-05-13 |
+| Fluffy | 1999-02-04 |
+| Chispa | 1998-09-11 |
+| Mau    | 1998-03-17 |
+| Kaiser | 1989-08-31 |
++--------+------------+
+9 rows in set (0.00 sec)
+
+mysql> select nombre, especie, nacimiento from mascotas order by especie, nacimiento desc;
++--------+-----------+------------+
+| nombre | especie   | nacimiento |
++--------+-----------+------------+
+| Wicho  | Ave       | 2000-02-09 |
+| Chispa | Ave       | 1998-09-11 |
+| Fluffy | Gato      | 1999-02-04 |
+| Mau    | Gato      | 1998-03-17 |
+| Pelusa | Hamster   | 2000-03-30 |
+| FanFan | Perro     | 2000-08-27 |
+| Buffy  | Perro     | 1999-05-13 |
+| Kaiser | Perro     | 1989-08-31 |
+| Skin   | Serpiente | 2001-04-29 |
++--------+-----------+------------+
+9 rows in set (0.00 sec)
+
+mysql> create table jaulas(
+    -> id int, Animales varchar(20));
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> insert into jaulas values
+    -> (1,'hipopotamos'),
+    -> (2,'leones'),
+    -> (3,'zebras'),
+    -> (4,'jirafas'),
+    -> (5,\c
+mysql> insert into jaulas values
+    -> (1,'Aguila Real'),
+    -> (2,'Berrendo'),
+    -> (3,'Borrego cimarron'),
+    -> (4,'Bufalo cafre),
+    '> (5,'Caracara'),
+    '> (6,'Cebra de grant'),
+    '> (7,'Elefante africano'),
+    '> (8,'Guacamaya'),
+    '> (9,\c
+    '> ';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your
+MySQL server version for the right syntax to use near 'Caracara'),
+(6,'Cebra de grant'),
+(7,'Elefante africano'),
+(8,'Guacamaya'),
+(9,\' at line 5
+mysql> drop table jaulas;
+Query OK, 0 rows affected (0.31 sec)
+
+mysql> decribe zoologico;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your
+MySQL server version for the right syntax to use near 'decribe zoologico' at line 1
+mysql> show tables;
++---------------------+
+| Tables_in_zoologico |
++---------------------+
+| mascotas            |
++---------------------+
+1 row in set (0.00 sec)
+
+mysql> create table promociones(
+    -> idpromo int
+    -> , nombre varchar(50),
+    -> descripcion varchar(300),
+    -> \c
+mysql> create table promociones(
+    -> idpromo int,
+    -> nombre varchar(50),
+    -> descripcion varchar(250),
+    -> precioAdulto float,
+    -> precioNino float,
+    -> fecha date,
+    -> tipodeevento varchar(50),
+    -> tipodepaquete varchar(50),
+    -> horario varchar(50),
+    -> descuento varchar(10));
+Query OK, 0 rows affected (0.01 sec)
+
+mysql>

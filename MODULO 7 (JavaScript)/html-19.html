@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicios pg.31</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center><h1>Catorce Pagina<br><br>Operadores Logicos</h1><br></center>
+        <style>
+            body{
+                margin: 0 20%;
+            }
+        </style>
+        <hr>
+        <h1>Ejercicio 1</h1>
+        <p>Comparacion dias</p>
+        <script>
+            var dia=prompt("Ingresa el dia",'');
+            var mes=prompt("Ingresa el mes",'');
+            var ano=prompt("Ingresa el a;o",'');
+            if(parseInt(dia)==25&&parseInt(mes)==12){
+                document.write(dia+"/"+mes+"/"+ano+" es NAVIDAD");
+            }
+            else{
+                document.write(dia+"/"+mes+"/"+ano+" no es NAVIDAD");
+            }
+            
+        </script>
+        <hr>
+        <h1>Ejercicio 2</h1>
+        <script>
+            var num1=prompt("Ingresa el numero 1",'');
+            var num2=prompt("Ingresa el numero 2",'');
+            var num3=prompt("Ingresa el numero 3",'');
+            if(num1==num2&&num2==num3&&num1==num3){
+                var opt=(parseInt(num1)+parseInt(num2))*parseInt(num3);
+                document.write(num1+" + "+num1+" * "+num1+' = '+opt);
+            }
+            
+        </script>
+        <hr>
+   </body>
+</html>

@@ -1,0 +1,24 @@
+USE [Escuela]
+GO
+/****** Object:  StoredProcedure [dbo].[Alumno_ConsultaXMat]    Script Date: 05/09/2015 03:36:56 p.m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[Alumno_ConsultaXMat]
+@Matricula int
+as --que queremos que se ejecute
+begin--empieze
+SELECT [AlumniId] as ID
+      ,[Matriucula] as Matricula
+      ,[Nombre] as Nombre
+      ,[CURP] as CURP
+      ,[FechaNac] as [Fecha de nacimiento]
+      ,[Direccion] as Direccion
+      ,[Telefono] as Telefono
+      ,[GeneroId] as Genero
+      ,[Email] as [E-mail]
+      ,[Estatus] as Estatus
+  FROM [dbo].[Alumno]
+  where Matriucula=@Matricula
+end

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>while</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center><h1>Decimanovena Pagina<br><br>WHILE</h1><br></center>
+        <style>
+            body{
+                margin: 0 20%;
+            }
+        </style>
+        <hr>
+        <h3>Ejercicio 1</h3>
+        <p>imprime el numero del 1 - 500</p>
+        <p id="num1"></p>
+        <script>
+        function eje1(){
+            var valor=1;
+            while(valor<=500){
+                var parrafo = document.getElementById('num1');
+                var text= document.createTextNode(valor);
+                parrafo.appendChild(text);
+                //document.body.appendChild(parrafo);
+                valor++;
+            }
+        };
+        </script>
+        <input type="submit" value="Iniciar" name="eje1" onclick="eje1()">
+        <hr>
+        <h3>Ejercicio 2</h3>
+        <p>imprimir los numeros del 50 - 100</p>
+        <script>
+        function eje2(){
+            var valor=50;
+            while(valor<=100){
+                var parrafo = document.createElement("P");
+                var text= document.createTextNode(valor);
+                parrafo.appendChild(text);
+                document.body.appendChild(parrafo);
+                valor++;
+            }
+        }
+        </script>
+        <input type="submit" value="Iniciar" name="eje2" onclick="eje2()">
+        <hr>
+        <h3>Ejercicio 3</h3>
+        <p>Imprimiir del -50 al 0</p>
+        <script>
+        function eje3(){
+            var valor=-50;
+            while(valor<=0){
+                var parrafo = document.createElement("P");
+                var text= document.createTextNode(valor);
+                parrafo.appendChild(text);
+                document.body.appendChild(parrafo);
+                valor++;
+            }
+        }
+        </script>
+        <input type="submit" value="Iniciar" name="eje3" onclick="eje3()">
+        <hr> 
+        <h3>Ejercicio 4</h3>
+        <p>imprimir del 2 al 100 de dos en dos</p>
+        <script>
+         function eje4(){
+            var valor=2;
+            while(valor<=100){
+                var parrafo = document.createElement("P");
+                var text= document.createTextNode(valor);
+                parrafo.appendChild(text);
+                document.body.appendChild(parrafo);
+                valor=valor+2;
+            }
+        }
+        </script>
+        <input type="submit" value="Iniciar" name="eje4" onclick="eje4()">
+        <hr>
+   </body>
+</html>

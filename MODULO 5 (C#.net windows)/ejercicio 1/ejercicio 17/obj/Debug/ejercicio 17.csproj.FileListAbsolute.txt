@@ -1,0 +1,11 @@
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 17\bin\Debug\ejercicio 17.exe.config
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 17\bin\Debug\ejercicio 17.exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 17\bin\Debug\ejercicio 17.pdb
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 17\obj\Debug\ejercicio 17.exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 17\obj\Debug\ejercicio 17.pdb
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 17\bin\Debug\ejercicio 17.exe.config
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 17\obj\Debug\ejercicio 17.exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 17\obj\Debug\ejercicio 17.pdb
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 17\obj\Debug\ejercicio 17.csprojResolveAssemblyReference.cache
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 17\bin\Debug\ejercicio 17.exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 17\bin\Debug\ejercicio 17.pdb

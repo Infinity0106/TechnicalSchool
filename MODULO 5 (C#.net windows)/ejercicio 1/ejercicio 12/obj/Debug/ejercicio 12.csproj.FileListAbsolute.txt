@@ -1,0 +1,9 @@
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 12\bin\Debug\ejercicio 12.exe.config
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 12\obj\Debug\ejercicio 12.csprojResolveAssemblyReference.cache
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 12\bin\Debug\ejercicio 12.exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 12\bin\Debug\ejercicio 12.pdb
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 12\obj\Debug\ejercicio 12.exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 12\obj\Debug\ejercicio 12.pdb
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 12\bin\Debug\ejercicio 12.exe.config
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 12\obj\Debug\ejercicio 12.exe
+C:\Users\Bernardo\Documents\TDS\MODULO 5 (C#.net windows)\ejercicio 1\ejercicio 12\obj\Debug\ejercicio 12.pdb

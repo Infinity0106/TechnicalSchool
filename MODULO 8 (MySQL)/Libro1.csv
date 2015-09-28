@@ -1,0 +1,50 @@
+SuperBowl,Fecha,EquipGana,MarcV,MarcG,EquipDerro,Estadio,Ciudad
+1,1967-01-15,Green Bay Packers,35,10,Kansas City Chiefs,Memorial Coliseum,Los Angeles
+2,1968-01-14,Green Bay Packers,33,14,Oakland Raiders,Orange Bowl,Miami
+3,1969-01-12,New York Jets,16,7,Baltimore Colts,Orange Bowl,Miami
+4,1970-01-11,Kansas City Chiefs,23,7,MinnesotaVikings,Tulane Stadium,Nueva Orleans
+5,1971-01-17,Baltimore Colts,16,13,Dallas Cowboys,Orange Bowl,Miami
+6,1972-01-16,Dallas Cowboys,24,3,Miami Dolphins,Tulane Stadium,Nueva Orleans
+7,1973-01-14,Miami Dolphins,14,7,Washington Redskins,Memorial Coliseum,Los Angeles
+8,1974-01-13,Miami Dolphins,24,7,MinnesotaVikings,Rice Stadium,Houston
+9,1975-01-12,Pittsburgh Steelers,16,6,MinnesotaVikings,Tulane Stadium,Nueva Orleans
+10,1976-01-18,Pittsburgh Steelers,21,17,Dallas Cowboys,Orange Bowl,Miami
+11,1977-01-09,Oakland Raiders,32,14,MinnesotaVikings,Rose Bowl,Pasadena
+12,1978-01-15,Dallas Cowboys,27,10,Denver Broncos,Superdome,Nueva Orleans
+13,1979-01-21,Pittsburgh Steelers,35,31,Dallas Cowboys,Orange Bowl,Miami
+14,1980-01-20,Pittsburgh Steelers,31,19,Los Angeles Rams,Rose Bowl,Pasadena
+15,1981-01-25,Oakland Raiders,27,10,Philadelphia Eagles,Superdome,Nueva Orleans
+16,1982-01-24,San Fransisco 49ers,26,21,Cincinnati Bengals,Silverdome,Pontiac
+17,1983-01-30,Washington Redskins,27,17,Miami Dolphins,Rose Bowl,Pasadena
+18,1984-01-22,Los Angeles Raiders,38,9,Washington Redskins,Tampa Stadium,Tampa
+19,1985-01-20,San Fransisco 49ers,38,16,Miami Dolphins,Stanford Stadium,Palo Alto (California)
+20,1986-01-26,Chicago Bears,46,10,New England Patriots,Superdome,Nueva Orleans
+21,1987-01-25,New York Giants,39,20,Denver Broncos,Rose Bowl,Pasadena
+22,1988-01-31,Washington Redskins,42,10,Denver Broncos,Jack Murphy Stadium,San Diego
+23,1989-01-22,San Fransisco 49ers,20,16,Cincinnati Bengals,Joe Robbie Stadium,Miami
+24,1990-01-20,San Fransisco 49ers,55,10,Denver Broncos,Superdome,Nueva Orleans
+25,1991-01-27,New York Giants,20,19,Buffalo Bills,Tampa Stadium,Tampa
+26,1992-01-26,Washington Redskins,37,24,Buffalo Bills,Metrodome,Minneapolis
+27,1993-01-31,Dallas Cowboys,52,17,Buffalo Bills,Rose Bowl,Pasadena
+28,1994-01-30,Dallas Cowboys,30,13,Buffalo Bills,Georgia Dome,Atlanta
+29,1995-01-29,San Fransisco 49ers,49,26,San Diego Chargers,Joe Robbie Stadium,Miami
+30,1996-01-28,Dallas Cowboys,27,17,Pittsburgh Steelers,Sun Devil Stadium,Tempe
+31,1997-01-26,Green Bay Packers,35,21,New England Patriots,Superdome,Nueva Orleans
+32,1998-01-25,Denver Broncos,31,24,Green Bay Parckers,Qualcomm Stadium,San Diego
+33,1999-01-31,Denver Broncos,34,19,Atlanta Falcons,Pro Player Stadium,Miami
+34,2000-01-30,St. Louis Rams,23,16,Tennessee Titans,Georgia Dome,Atlanta
+35,2001-01-28,Baltimore Ravens,34,7,New York Giants,Raymond James Stadium,Tampa
+36,2002-02-03,New England Patriots,20,17,St. Louis Rams,Superdome,Nueva Orleans
+37,2003-01-26,Tampa Bay Buccaneers,48,21,Oakland Raiders,Qualcomm Stadium,San Diego
+38,2004-02-01,New England Patriots,32,29,Carolina Panthers,Reliant Stadium,Houston
+39,2005-02-06,New England Patriots,24,21,Philadelphia Eagles,ALLTEL Stadium,Jacksonville
+40,2006-02-05,Pittsburgh Steelers,21,10,Seattle Seahawks,Ford Field,Detroit
+41,2007-02-04,Indianapolis Colts,29,17,Chicago Bears,Dolphin Stadium,Miami Gardens
+42,2008-02-03,New York Giants,17,14,New England Patriots,University of Phoenix Stadium,Glendale
+43,2009-02-01,Pittsburgh Steelers,27,23,Arizona Cardinals,Raymond James Stadium,Tampa
+44,2010-02-07,New Orleans Saints,31,17,Indianapolis Colts,Dolphin Stadium,Miami Gardens
+45,2011-02-06,Green Bay Packers,31,26,Pittsburgh Steelers,Cowboys Stadium,Arlington
+46,2012-02-05,New York Giants,21,17,New England Patriots,Lucas Oil Stadium,Indianapolis
+47,2013-02-03,Baltimore Ravens,34,31,San Francisco 49ers,Mercedes-Benz Superdome,Nueva Orleans
+48,2014-02-02,Seattle Seahawks,43,8,Denver Broncos,MetLife Stadium,Nueva York
+,,,,,,,

@@ -1,0 +1,496 @@
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 2
+Server version: 5.5.21 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2011, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show database
+    ->
+    ->
+    ->
+    -> \c;
+ERROR:
+No query specified
+
+mysql> show database;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your
+MySQL server version for the right syntax to use near 'database' at line 1
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| test               |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> use mysql;
+Database changed
+mysql> show tables;
++---------------------------+
+| Tables_in_mysql           |
++---------------------------+
+| columns_priv              |
+| db                        |
+| event                     |
+| func                      |
+| general_log               |
+| help_category             |
+| help_keyword              |
+| help_relation             |
+| help_topic                |
+| host                      |
+| ndb_binlog_index          |
+| plugin                    |
+| proc                      |
+| procs_priv                |
+| proxies_priv              |
+| servers                   |
+| slow_log                  |
+| tables_priv               |
+| time_zone                 |
+| time_zone_leap_second     |
+| time_zone_name            |
+| time_zone_transition      |
+| time_zone_transition_type |
+| user                      |
++---------------------------+
+24 rows in set (0.00 sec)
+
+mysql> create database playstore;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| playstore          |
+| test               |
++--------------------+
+5 rows in set (0.01 sec)
+
+mysql> use playstore;
+Database changed
+mysql> create table usuarios{
+    -> id usuario int,
+    -> \c
+mysql> \c;
+ERROR:
+No query specified
+
+mysql> create table usuarios{
+    -> IDusuarios int,
+    -> Password varchar(50),
+    -> \c;
+ERROR:
+No query specified
+
+mysql> \g
+ERROR:
+No query specified
+
+mysql> create table usuarios{
+    -> IDusuarios int,
+    -> Nombre varchar(50),
+    -> Fecha date};
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your
+MySQL server version for the right syntax to use near '{
+IDusuarios int,
+Nombre varchar(50),
+Fecha date}' at line 1
+mysql> create table usuarios(
+    -> IDusuarios int,
+    -> Nombre varchar(50),
+    -> Fecha date);
+Query OK, 0 rows affected (0.11 sec)
+
+mysql> show table
+    ->
+    -> \g
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your
+MySQL server version for the right syntax to use near '' at line 1
+mysql> create table USER(
+    -> E-mail varchar(50),
+    -> Password varchar(50),
+    -> Edad int,
+    -> Genero varchar(10));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your
+MySQL server version for the right syntax to use near '-mail varchar(50),
+Password varchar(50),
+Edad int,
+Genero varchar(10))' at line 2
+mysql> create table USER(
+    -> E_mail varchar(50),
+    -> Password varchar(50),
+    -> Edad int,
+    -> Genero varchar(10));
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> describe USER
+    -> ;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| E_mail   | varchar(50) | YES  |     | NULL    |       |
+| Password | varchar(50) | YES  |     | NULL    |       |
+| Edad     | int(11)     | YES  |     | NULL    |       |
+| Genero   | varchar(10) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> show tables;
++---------------------+
+| Tables_in_playstore |
++---------------------+
+| user                |
+| usuarios            |
++---------------------+
+2 rows in set (0.00 sec)
+
+mysql> create table APP(
+    -> IDapp int,
+    -> NomApp varchar(20),
+    -> IDcat varchar(15),
+    -> Autor varchar(50),
+    -> AnoPubli date,
+    -> AppDescrip varchar(200));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> create table DOWNLOAD(
+    -> IDdesc int,
+    -> E_mail varchar(50),
+    -> IDapp int,
+    -> FDownload date);
+Query OK, 0 rows affected (0.11 sec)
+
+mysql> show tables;
++---------------------+
+| Tables_in_playstore |
++---------------------+
+| app                 |
+| download            |
+| user                |
+| usuarios            |
++---------------------+
+4 rows in set (0.00 sec)
+
+mysql> create table CATEGORY(
+    -> IDcat int,
+    -> NomCat varchar(20),
+    -> CarDescrip varchar(200));
+Query OK, 0 rows affected (0.20 sec)
+
+mysql> create table NEWAPP(
+    -> IDapp int,
+    -> Finicio date,
+    -> Ffin date);
+Query OK, 0 rows affected (0.19 sec)
+
+mysql> show tables;
++---------------------+
+| Tables_in_playstore |
++---------------------+
+| app                 |
+| category            |
+| download            |
+| newapp              |
+| user                |
+| usuarios            |
++---------------------+
+6 rows in set (0.00 sec)
+
+mysql> describe app
+    -> ;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| IDapp      | int(11)      | YES  |     | NULL    |       |
+| NomApp     | varchar(20)  | YES  |     | NULL    |       |
+| IDcat      | varchar(15)  | YES  |     | NULL    |       |
+| Autor      | varchar(50)  | YES  |     | NULL    |       |
+| AnoPubli   | date         | YES  |     | NULL    |       |
+| AppDescrip | varchar(200) | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
+
+mysql> describe category;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| IDcat      | int(11)      | YES  |     | NULL    |       |
+| NomCat     | varchar(20)  | YES  |     | NULL    |       |
+| CarDescrip | varchar(200) | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> describe download;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| IDdesc    | int(11)     | YES  |     | NULL    |       |
+| E_mail    | varchar(50) | YES  |     | NULL    |       |
+| IDapp     | int(11)     | YES  |     | NULL    |       |
+| FDownload | date        | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> describe newapp;
++---------+---------+------+-----+---------+-------+
+| Field   | Type    | Null | Key | Default | Extra |
++---------+---------+------+-----+---------+-------+
+| IDapp   | int(11) | YES  |     | NULL    |       |
+| Finicio | date    | YES  |     | NULL    |       |
+| Ffin    | date    | YES  |     | NULL    |       |
++---------+---------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+
+mysql> describe user;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| E_mail   | varchar(50) | YES  |     | NULL    |       |
+| Password | varchar(50) | YES  |     | NULL    |       |
+| Edad     | int(11)     | YES  |     | NULL    |       |
+| Genero   | varchar(10) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> drop table app;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> show tables;
++---------------------+
+| Tables_in_playstore |
++---------------------+
+| category            |
+| download            |
+| newapp              |
+| user                |
+| usuarios            |
++---------------------+
+5 rows in set (0.00 sec)
+
+mysql> create table app(
+    -> IDapp int,
+    -> NomApp varchar(),
+    -> NomApp varchar()\c;
+ERROR:
+No query specified
+
+mysql> create table APP(
+    -> IDapp int,
+    -> NomApp varchar(20),
+    -> IDcat varchar(10),
+    -> Autor varchar(50),
+    -> AnoPublicacion date,
+    -> AppDescrip varchar(100),
+    -> Precio float);
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> create table OFFERT(
+    -> IDapp  int,
+    -> NewPrice float,
+    -> Finicio date,
+    -> Ffin date);
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> show tables;
++---------------------+
+| Tables_in_playstore |
++---------------------+
+| app                 |
+| category            |
+| download            |
+| newapp              |
+| offert              |
+| user                |
+| usuarios            |
++---------------------+
+7 rows in set (0.01 sec)
+
+mysql> \h;
+
+For information about MySQL products and services, visit:
+   http://www.mysql.com/
+For developer information, including the MySQL Reference Manual, visit:
+   http://dev.mysql.com/
+To buy MySQL Enterprise support, training, or other products, visit:
+   https://shop.mysql.com/
+
+List of all MySQL commands:
+Note that all text commands must be first on line and end with ';'
+?         (\?) Synonym for `help'.
+clear     (\c) Clear the current input statement.
+connect   (\r) Reconnect to the server. Optional arguments are db and host.
+delimiter (\d) Set statement delimiter.
+ego       (\G) Send command to mysql server, display result vertically.
+exit      (\q) Exit mysql. Same as quit.
+go        (\g) Send command to mysql server.
+help      (\h) Display this help.
+notee     (\t) Don't write into outfile.
+print     (\p) Print current command.
+prompt    (\R) Change your mysql prompt.
+quit      (\q) Quit mysql.
+rehash    (\#) Rebuild completion hash.
+source    (\.) Execute an SQL script file. Takes a file name as an argument.
+status    (\s) Get status information from the server.
+tee       (\T) Set outfile [to_outfile]. Append everything into given outfile.
+use       (\u) Use another database. Takes database name as argument.
+charset   (\C) Switch to another charset. Might be needed for processing binlog with multi-byte char
+sets.
+warnings  (\W) Show warnings after every statement.
+nowarning (\w) Don't show warnings after every statement.
+
+For server side help, type 'help contents'
+
+mysql> alter table usuarios add categorias varchar(20);
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe usuarios;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| IDusuarios | int(11)     | YES  |     | NULL    |       |
+| Nombre     | varchar(50) | YES  |     | NULL    |       |
+| Fecha      | date        | YES  |     | NULL    |       |
+| categorias | varchar(20) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+mysql> alter table usuarios drop fecha;
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe usuarios;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| IDusuarios | int(11)     | YES  |     | NULL    |       |
+| Nombre     | varchar(50) | YES  |     | NULL    |       |
+| categorias | varchar(20) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+
+mysql> alter table usuarios change nombre nom varchar(20);
+Query OK, 0 rows affected (0.20 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe usuarios;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| IDusuarios | int(11)     | YES  |     | NULL    |       |
+| nom        | varchar(20) | YES  |     | NULL    |       |
+| categorias | varchar(20) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> alter table usuarios modify nom double;
+Query OK, 0 rows affected (0.19 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe usuarios;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| IDusuarios | int(11)     | YES  |     | NULL    |       |
+| nom        | double      | YES  |     | NULL    |       |
+| categorias | varchar(20) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> alter table usuarios add Fecha date, change nom Nombre varchar(50);
+Query OK, 0 rows affected (0.17 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe usuarios;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| IDusuarios | int(11)     | YES  |     | NULL    |       |
+| Nombre     | varchar(50) | YES  |     | NULL    |       |
+| categorias | varchar(20) | YES  |     | NULL    |       |
+| Fecha      | date        | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> alter table usuarios change categorias Categorias;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your
+MySQL server version for the right syntax to use near '' at line 1
+mysql> alter table usuarios change categorias Categorias varchar(20);
+Query OK, 0 rows affected (0.19 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> insert into usuarios(IDusuarios, Nombre, Categorias, Fecha) values(001,'Bernardo Orozco','Adm
+inistrador','1996-01-06');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from usuarios;
++------------+-----------------+---------------+------------+
+| IDusuarios | Nombre          | Categorias    | Fecha      |
++------------+-----------------+---------------+------------+
+|          1 | Bernardo Orozco | Administrador | 1996-01-06 |
++------------+-----------------+---------------+------------+
+1 row in set (0.00 sec)
+
+mysql> update usuarios set Fecha='1996-06-01' where Fecha='1996-01-06';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql>
+mysql> select * from usuarios;
++------------+-----------------+---------------+------------+
+| IDusuarios | Nombre          | Categorias    | Fecha      |
++------------+-----------------+---------------+------------+
+|          1 | Bernardo Orozco | Administrador | 1996-06-01 |
++------------+-----------------+---------------+------------+
+1 row in set (0.00 sec)
+
+mysql> insert into usuarios(nombre,categorias) values ('Jose Antonio','Empleado');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from usuarios;
++------------+-----------------+---------------+------------+
+| IDusuarios | Nombre          | Categorias    | Fecha      |
++------------+-----------------+---------------+------------+
+|          1 | Bernardo Orozco | Administrador | 1996-06-01 |
+|       NULL | Jose Antonio    | Empleado      | NULL       |
++------------+-----------------+---------------+------------+
+2 rows in set (0.00 sec)
+
+mysql> inset into usuarios values(3,'Leticia','Ventas','1995-03-10'),(4,'Karla Leticia','Ventas','19
+99-12-21'),(5,'Felix Cuellar','Administrador','1993-09-24');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your
+MySQL server version for the right syntax to use near 'inset into usuarios values(3,'Leticia','Venta
+s','1995-03-10'),(4,'Karla Leticia'' at line 1
+mysql> insert into usuarios values(3,'Leticia','Ventas','1995-03-10'),(4,'Karla Leticia','Ventas','1
+999-12-21'),(5,'Felix Cuellar','Administrador','1993-09-24');
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> select * from usuarios;
++------------+-----------------+---------------+------------+
+| IDusuarios | Nombre          | Categorias    | Fecha      |
++------------+-----------------+---------------+------------+
+|          1 | Bernardo Orozco | Administrador | 1996-06-01 |
+|       NULL | Jose Antonio    | Empleado      | NULL       |
+|          3 | Leticia         | Ventas        | 1995-03-10 |
+|          4 | Karla Leticia   | Ventas        | 1999-12-21 |
+|          5 | Felix Cuellar   | Administrador | 1993-09-24 |
++------------+-----------------+---------------+------------+
+5 rows in set (0.00 sec)
+
+mysql>

@@ -1,0 +1,11 @@
+C:\Users\Educación Continua\Desktop\MODULO 10 (C#.net)\Ejemplo-01\Ejemplo-01\bin\Ejemplo-01.dll
+C:\Users\Educación Continua\Desktop\MODULO 10 (C#.net)\Ejemplo-01\Ejemplo-01\bin\Ejemplo-01.pdb
+C:\Users\Educación Continua\Desktop\MODULO 10 (C#.net)\Ejemplo-01\Ejemplo-01\obj\Debug\Ejemplo-01.csprojResolveAssemblyReference.cache
+C:\Users\Educación Continua\Desktop\MODULO 10 (C#.net)\Ejemplo-01\Ejemplo-01\obj\Debug\Ejemplo-01.dll
+C:\Users\Educación Continua\Desktop\MODULO 10 (C#.net)\Ejemplo-01\Ejemplo-01\obj\Debug\Ejemplo-01.pdb
+C:\Users\Bernardo\Documents\TDS\MODULO 10 (C#.net)\Ejemplo-01\Ejemplo-01\bin\Ejemplo-01.dll.config
+C:\Users\Bernardo\Documents\TDS\MODULO 10 (C#.net)\Ejemplo-01\Ejemplo-01\bin\Ejemplo-01.dll
+C:\Users\Bernardo\Documents\TDS\MODULO 10 (C#.net)\Ejemplo-01\Ejemplo-01\bin\Ejemplo-01.pdb
+C:\Users\Bernardo\Documents\TDS\MODULO 10 (C#.net)\Ejemplo-01\Ejemplo-01\obj\Debug\Ejemplo-01.csprojResolveAssemblyReference.cache
+C:\Users\Bernardo\Documents\TDS\MODULO 10 (C#.net)\Ejemplo-01\Ejemplo-01\obj\Debug\Ejemplo-01.dll
+C:\Users\Bernardo\Documents\TDS\MODULO 10 (C#.net)\Ejemplo-01\Ejemplo-01\obj\Debug\Ejemplo-01.pdb

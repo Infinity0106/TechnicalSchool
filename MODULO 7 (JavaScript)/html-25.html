@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>while</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="reload()">
+        <center><h1>20 Pagina<br><br>switch estaciones</h1><br></center>
+        <style>
+            body{
+                margin: 0 20%;
+            }
+            p{
+                text-align: justify;
+            }
+            img{
+                height: 500px;
+            }
+        </style>
+        <center><h2 id="titulo"></h2>
+        <img id="imagen">
+        <p id="parrafo"></p></center>
+        <script>
+            function reload(){
+            var valor=prompt("Dame una de las estaciones 1) Primavera 2) Verano 3) Otrono 4) Invieron",'');
+            valor=parseInt(valor);
+            switch(valor){
+                case 1:
+                    document.getElementById('titulo').innerHTML='Primavera';
+                    document.getElementById('imagen').src='opt1.gif';
+                    document.getElementById('parrafo').textContent='primavera bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ';
+                    break;
+                case 2:
+                    document.getElementById('titulo').innerHTML='Verano';
+                    document.getElementById('imagen').src='opt2.jpg';
+                    document.getElementById('parrafo').textContent='verano bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ';
+                    break;
+                case 3:
+                    document.getElementById('titulo').innerHTML='Otono';
+                    document.getElementById('imagen').src='opt3.gif';
+                    document.getElementById('parrafo').textContent='orono bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ';
+                    break;
+                case 4:
+                    document.getElementById('titulo').innerHTML='Invieron';
+                    document.getElementById('imagen').src='opt4.jpg';
+                    document.getElementById('parrafo').textContent='invierno bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ';
+                    break;
+                default:
+                    document.getElementById('titulo').innerHTML='ERROR de captura 1-4';
+                    break;
+            }
+            }
+        </script>
+        <input type="submit" value="Recall" name="recall"  onclick="reload()"/>
+   </body>
+</html>

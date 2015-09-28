@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 8</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center><h1>Quinta Pagina<br><br>Button JS y funcion onClick de impresion</h1><br></center>
+        <form>
+        <input type="button" value="Presioname" name="btnimp" onClick="formulario()"/>
+        </form>
+        <style>
+            body{
+                margin: 0 20%;
+            }
+        </style>
+        <script>
+            function formulario(){
+                var nom = prompt('Tu nombre es?','');
+                var mat = prompt('Dame tu matricula?','');
+                var ed = prompt('Cuantos a;os tienes?','');
+                var mail = prompt('E-mail','');
+                var car = prompt('Carrera que cursas o cursaste?','');
+                var emp = prompt('Empresa en la que laberas?','');
+                document.write("nombre: "+nom+'<br>matricula: '+mat+'<br>Edad: '+ed+"<br>E-mail: "+mail+"<br>Carrera: "+car+'<br>Empresa: '+emp);
+            };
+        </script>
+    </body>
+</html>

@@ -1,0 +1,3 @@
+empezar apache en xampp
+
+linkear con xamp htcdocs o algo asi para que se vea en el navegador

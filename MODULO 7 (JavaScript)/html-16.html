@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 16</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center><h1>Onceaba Pagina<br><br>IF anidado</h1><br></center>
+        <style>
+            body{
+                margin: 0 20%;
+            }
+        </style>
+        <script>
+            var cal1=prompt("Ingresa la calificacion 1",'');
+            var cal2=prompt("Ingresa la calificacion 2",'');
+            var cal3=prompt("Ingresa la calificacion 3",'');
+            var prom=(parseInt(cal1)+parseInt(cal2)+parseInt(cal3))/3;
+            if(prom>=7){
+                document.write('Promedio con <b>'+prom+'</b>');
+            }
+            else{
+                if(prom<7&&prom>=4){
+                    document.write('Regular con <b>'+prom+'</b>');
+                }
+                else{
+                    document.write('Reprobado con <b>'+prom+'</b>');
+                }
+            }
+            
+        </script>
+   </body>
+</html>
